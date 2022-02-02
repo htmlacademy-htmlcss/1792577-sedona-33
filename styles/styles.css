@@ -40,7 +40,7 @@ color: #000000;
 
 
 .visually-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .page-header {
@@ -269,6 +269,14 @@ background-color: rgba(131, 179, 211, 1);
   text-decoration: none;
 }
 /*Фильт гостиниц*/
+.icon-breadcrumbs {
+  background-image: url("../images/house-main.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
 .mode-tile {
   background-image: url("../images/mode-tile 1.png");
   background-repeat: no-repeat;
