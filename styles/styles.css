@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2")format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+font-family: "PT Sans", sans-serif;
+font-size: 20px;
+line-height: 26px;
+background-color: #ffffff;
+color: #000000;
+}
+
+
+.visually-hidden {
+  display: none;
+}
+
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-link {
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+/* Добовляет фоновую картинку */
+.greeting {
+
+background-image: url("../images/index-background (1).jpg") ;
+background-repeat: no-repeat;
+background-size: 100% auto;
+}
+
+
+.divider {
+  background-image: url("../images/divider.png");
+  background-repeat: no-repeat;
+
+}
+/*Добавляет иконки в шапку*/
+.navigation-img-search {
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-img-favorite {
+
+  background-image: url("../images/favorite.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+
+
+/* Описание Седоны*/
+
+.description-town {
+  font-weight: 700;
+  font-size:30px ;
+  line-height:36px;
+
+}
+
+.reason {
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.discription {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Причины для поездки в Седону*/
+.home {
+  background-image: url("../images/house.png");
+  background-repeat: no-repeat;
+}
+.eat {
+  background-image: url("../images/burger.png");
+  background-repeat: no-repeat;
+}
+.souvenirs {
+  background-image: url("../images/present.png");
+  background-repeat: no-repeat;
+}
+.best-town h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.best-town p {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
+}
+.devil-bridge h3 {
+  font-weight: 700;
+  font-size: 24px ;
+  line-height: 28px ;
+  text-align: center ;
+}
+.devil-bridge p {
+  font-size: 18px ;
+  line-height: 21px ;
+  text-align: center ;
+}
+.square h3 {
+  font-weight: 700;
+  font-size: 24px ;
+  line-height: 28px ;
+  text-align: center ;
+}
+
+.square p {
+  font-size: 18px ;
+  line-height: 21px ;
+  text-align: center ;
+}
+.beautiful-road h3 {
+  font-weight: 700;
+  font-size: 24px ;
+  line-height: 28px ;
+  text-align: center ;
+}
+.beautiful-road p {
+  font-weight: 400;
+  font-size: 18px ;
+  line-height: 21px ;
+  text-align: center ;
+}
+.tourist h3 {
+  font-weight: 700;
+   font-size: 24px ;
+   line-height: 28px ;
+   text-align: center ;
+}
+.tourist p {
+  font-size: 18px ;
+  line-height: 21px ;
+  text-align: center ;
+}
+
+ .advantages-item h4 {
+   font-weight: 700;
+   font-size: 24px ;
+   line-height: 28px ;
+   text-align: center ;
+ }
+
+ .advantages-item p {
+  font-size: 18px ;
+  line-height: 21px ;
+  text-align: center ;
+
+}
+
+/*Добавляет цвет фона ячейкам с причинами */
+.home {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.souvenirs {
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+.best-town, .devil-bridge {
+background-color: rgba(131, 179, 211, 1);
+
+}
+
+.square, .tourist {
+
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.beautiful-road {
+
+  background-color: rgba(131, 179, 211, 0.2);
+}
+/* Секция с кнопкой брони */
+.booking h4 {
+  font-weight: 700;
+  font-size:30px ;
+  line-height:36px;
+  text-align: center;
+  }
+
+.booking p {
+  font-size:22px ;
+  line-height:26px;
+  text-align: center;
+}
+.button-hotel {
+  font-weight: 700;
+  font-size:20px ;
+  line-height:36px;
+  text-align: center;
+  background-color: rgba(117, 98, 87, 1);
+  color: #ffffff;
+  text-decoration: none;
+}
+/*Подписка*/
+.subscription-index {
+  background-image: url("../images/background-subscription.jpg");
+  background-repeat: no-repeat;
+}
+
+.subscription h2 {
+  font-weight: 700;
+  font-size:30px ;
+  line-height:36px;
+  text-align: center;
+}
+
+.subscription p {
+  font-size:22px ;
+  line-height:26px;
+  text-align: center;
+}
+
+/*Контакты*/
+
+.phone {
+  font-size:40px ;
+  line-height:40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+/*Фильт гостиниц*/
+.mode-tile {
+  background-image: url("../images/mode-tile 1.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+.mode-slideshow {
+  background-image: url("../images/mode-slideshow 1.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+.mode-list {
+  background-image: url("../images/mode-list 1.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+.filter {
+background-image: url("../images/catalog-background.jpg");
+background-repeat: no-repeat;
+}
+.hotel-heading {
+  font-weight: 700 ;
+  font-size: 60px;
+  line-height: 77px;
+  text-align: center;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+.hotels-filter-title {
+  font-weight: 700 ;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.choice {
+  font-size: 18px;
+  line-height: 23px;
+}
+/*Фильтр поиска*/
+.result {
+  font-weight: 700 ;
+  font-size: 30px;
+  line-height: 38px;
+}
+.sort {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.hotel-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.kind-housing, .hotel-card-price {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-card-button  {
+  color: #000000;
+  text-decoration: none;
+}
+
+.pagination-link {
+  color: #000000;
+  text-decoration: none;
+}
