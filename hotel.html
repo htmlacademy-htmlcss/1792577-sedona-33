@@ -4,15 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Гостиницы Седоны</title>
-  <link href="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/styles/styles.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="logo" src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/logo.png"
-          alt="Логотип сайта Седона">
+        <img class="logo" src="images/logo.png" alt="Логотип сайта Седона">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item navigation-link-current">
@@ -31,18 +30,14 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/search.png" alt=""
-              width="18" height="18">
+          <a class="navigation-link navigation-img-search" href="#">
             <span class="visually-hidden">
               Поиск
             </span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/favorite.png" alt=""
-              width="20" height="20">
+          <a class="navigation-link navigation-img-favorite" href="#">
             <span class="visually-hidden">
               Избранное
             </span>
@@ -58,84 +53,84 @@
   </header>
   <main class="main-inter">
     <div class="filter">
-    <header>
+      <header>
         <h1 class="hotel-heading">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span><img
-                src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/house-main.png" alt=""
-                width="px" height="px"></a>
+            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная
+
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы
             </a>
           </li>
         </ul>
-    </header>
-    <section class="filter-hotels">
-      <h2 class="visually-hidden">Фильтр гостиниц</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="hotels-filter-group">
-          <legend class="hotels-filter-title">Инфраструктура</legend>
-          <label class="infrastructure">
+      </header>
+      <section class="filter-hotels">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Инфраструктура</legend>
+            <label class="infrastructure">
+              <ul class="choice">
+                <li>
+                  <label>
+                    <input class="infrastructure-input" type="checkbox" name="swimming-pool" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="infrastructure-input" type="checkbox" name="parking-space" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="infrastructure-input" type="checkbox" name="Wi-Fi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+
+            </label>
+          </fieldset>
+          <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Тип жилья:
+            </legend>
             <ul class="choice">
               <li>
                 <label>
-                  <input class="infrastructure-input" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
+                  <input type="radio" name="type-housing" value="hotel" checked>
+                  Гостиница
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="infrastructure-input" type="checkbox" name="parking-space" checked>
-                  Парковка
+                  <input type="radio" name="type-housing" value="motel">
+                  Мотель
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="infrastructure-input" type="checkbox" name="Wi-Fi">
-                  Wi-Fi
+                  <input type="radio" name="type-housing" value="apartments">
+                  Апартаменты
                 </label>
               </li>
             </ul>
-
-          </label>
-        </fieldset>
-        <fieldset class="hotels-filter-group">
-          <legend class="hotels-filter-title">Тип жилья:
-          </legend>
-          <ul class="choice">
-            <li>
-              <label>
-                <input type="radio" name="type-housing" value="hotel" checked>
-                Гостиница
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="type-housing" value="motel">
-                Мотель
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="type-housing" value="apartments">
-                Апартаменты
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="hotels-price">
-          <legend lass="hotels-filter-title">Стоимость, ₽:
-          <input type="range" min="0" max="10000">
-        </legend>
-        </fieldset>
-        <section class="send">
-          <button class="button" type="submit">Применить</button>
-          <button class="throw-off" type="reset">Сбросить</button>
-        </section>
-      </form>
-    </section>
+          </fieldset>
+          <fieldset class="hotels-price">
+            <legend lass="hotels-filter-title">Стоимость, ₽:
+              <input type="range" min="0" max="10000">
+            </legend>
+          </fieldset>
+          <section class="send">
+            <button class="button" type="submit">Применить</button>
+            <button class="throw-off" type="reset">Сбросить</button>
+          </section>
+        </form>
+      </section>
     </div>
     <section class="search-filter">
       <h2 class="visually-hidden"> Фильтр поиска</h2>
@@ -149,25 +144,18 @@
       <div>
         <a class="button mode-tile " href="#">
           <span class="visually-hidden">Показать карточки</span>
-          <img src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/mode-tile 1.png"
-            alt="Показать карточки">
         </a>
         <a class="button mode-slideshow " href="#">
           <span class="visually-hidden">Показать слайдшоу</span>
-          <img src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/mode-slideshow 1.png"
-            alt="Показать слайдшоу">
         </a>
-        <a href="#" class="button mode-list">
+        <a href="#" class="button">
+          <span class="mode-list"></span>
           <span class="visually-hidden">Показать список</span>
-          <img src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/mode-list 1.png"
-            alt="Показать список">
         </a>
       </div>
       <div class="hotel-card amara-resort-spa">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image"
-            src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/hotel-1.jpg"
-            alt="Amara Resort & Spa" width="299px" height="220px">
+          <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Amara Resort & Spa" width="299px" height="220px">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
         </a>
         <p class="kind-housing">Гостиница</p>
@@ -181,9 +169,7 @@
       </div>
       <div class="hotel-card desert-quail-inn">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image"
-            src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/hotel-2.jpg"
-            alt="Desert Quail Inn" width="309px" height="220px">
+          <img class="hotel-card-image" src="images/hotel-2.jpg" alt="Desert Quail Inn" width="309px" height="220px">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
         </a>
         <p class="kind-housing">Гостиница</p>
@@ -198,9 +184,8 @@
       </div>
       <div class="hotel-card villas-at-poco-diabl ">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image"
-            src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/hotel-3.jpg"
-            alt="Villas at Poco Diablo" width="308px" height="220px">
+          <img class="hotel-card-image" src="images/hotel-3.jpg" alt="Villas at Poco Diablo" width="308px"
+            height="220px">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
         </a>
         <p class="kind-housing">Гостиница</p>
@@ -216,9 +201,7 @@
       </div>
       <div class="hotel-card greentree-inn">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image"
-            src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/hotel-4.jpg"
-            alt="GreenTree Inn" width="299px" height="220px">
+          <img class="hotel-card-image" src="images/hotel-4.jpg" alt="GreenTree Inn" width="299px" height="220px">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
         </a>
         <p class="kind-housing">Гостиница</p>
@@ -294,24 +277,20 @@
       <h2 class="advantages-heading">Мы в соцсетях</h2>
       <ul>
         <li><a class="twitter" href="https://twitter.com/htmlacademy_ru"><img class="img-twitter"
-              src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/twitter.png" alt="twitter"
-              width="18px" height="14px">
+              src="images/twitter.png" alt="twitter" width="18px" height="14px">
           </a></li>
         <li><a class="facebook" href="https://www.facebook.com/htmlacademy"><img class="img-facebook"
-              src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/social-facebook.png"
-              alt="facebook" width="10px" height="18px"></a></li>
+              src="images/social-facebook.png" alt="facebook" width="10px" height="18px"></a></li>
         <li><a class="youtube" href="https://www.youtube.com/c/HTMLAcademyRUS"><img class="img-youtube"
-              src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/social-youtube.png"
-              alt="youtube" width="20px" height="16px"></a></li>
+              src="images/social-youtube.png" alt="youtube" width="20px" height="16px"></a></li>
       </ul>
     </section>
     <label class="phone">
       <a class="phone" href="+78128121212">+7 (812) 812-12-12</a>
     </label>
 
-    <a class="htmlacademy" href="https://htmlacademy.ru/"><img
-        src="/Users/lilianaledneva/Desktop/HTMLacademy/1792577-sedona-33/sedona/image/logo_htmlacademy.png"
-        alt="htmlacademy" width="115px" height="34px"> </a>
+    <a class="htmlacademy" href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.png" alt="htmlacademy"
+        width="115px" height="34px"> </a>
   </footer>
 </body>
 
