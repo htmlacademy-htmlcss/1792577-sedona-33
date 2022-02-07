@@ -1,0 +1,488 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2")format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+body {
+margin: 0;
+display: flex;
+flex-direction: column;
+min-height: 100%;
+font-family: "PT Sans", sans-serif;
+font-size: 20px;
+line-height: 26px;
+background-color: #ffffff;
+color: #000000;
+}
+
+.main-container {
+
+flex-grow: 1;
+}
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+
+}
+
+.logo {
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
+  width: 140px;
+}
+.navigation-list {
+  margin: 0;
+  margin-right: 290px;
+  padding: 0;
+  width: 440px;
+}
+.navigation-user {
+  margin-left: auto;
+  padding: 0;
+  max-width: 350px;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.greeting-where {
+  display: block;
+  width: 460px;
+  margin: 0 auto;
+}
+
+.discription {
+  text-align: center;
+  margin: 0 auto;
+}
+/*Первая страница*/
+.advantages {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.best-town {
+  display: flex;
+  flex-grow: 1 2;
+  color: #ffffff;
+}
+
+.devil-bridge {
+  display: flex;
+  flex-grow: 2 1;
+  color: #ffffff;
+}
+.flex-self {
+  align-self:flex-start;
+}
+
+.recommendations {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  height: 385px;
+}
+.advantages h3, .advantages h4 {
+  text-transform: uppercase;
+}
+
+.square, .beautiful-road, .tourist {
+  width: 400px;
+  height: 385px;
+}
+.flex-end {
+  display: flex;
+  margin: 0;
+
+}
+
+/*Вторая страница*/
+
+.catalog-filter{
+  display: flex;
+}
+
+.hotel-heading {
+  width: 530px;
+  margin: 0;
+}
+.hotels-filter-group {
+  width: 150px;
+}
+.hotels-price {
+  width: 290px;
+}
+
+ .search-filter {
+   display: flex;
+   width: 1060px;
+   margin: 0 auto;
+ }
+.result {
+  width: 340px;
+  text-transform: uppercase;
+
+}
+.sort {
+  width: 290px;
+}
+.show {
+  width: 170px;
+}
+.pagination-show-more {
+  text-transform: uppercase;
+}
+.hotel-card-button {
+  text-transform: uppercase;
+}
+.hotel-card-favourites-button {
+  text-transform: uppercase;
+}
+.rating {
+  text-transform: uppercase;
+}
+.subscription-heading {
+  text-transform: uppercase;
+}
+.submit {
+  text-transform: uppercase;
+}
+.booking h2 {
+  text-transform: uppercase;
+}
+.button-hotel {
+  text-transform: uppercase;
+}
+.hotel-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  justify-content: space-between;
+}
+
+.footer-container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.social-network {
+  width: 110px;
+  margin-right: 60px;
+}
+.phone {
+  width: 720px;
+
+}
+.htmlacademy {
+  width: 120px;
+  margin-left: 55px;
+}
+.visually-hidden {
+  visibility: hidden;
+}
+
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-link {
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+/* Добовляет фоновую картинку */
+.greeting {
+
+background-image: url("../images/index-background (1).jpg") ;
+background-repeat: no-repeat;
+background-size: 100% auto;
+}
+
+
+.divider {
+  background-image: url("../images/divider.png");
+  background-repeat: no-repeat;
+
+}
+/*Добавляет иконки в шапку*/
+.navigation-img-search {
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-img-favorite {
+
+  background-image: url("../images/favorite.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+
+
+/* Описание Седоны*/
+
+.description-town {
+  font-weight: 700;
+  font-size:30px ;
+  line-height:36px;
+
+}
+
+.reason {
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.discription {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Причины для поездки в Седону*/
+.home {
+  background-image: url("../images/house.png");
+  background-repeat: no-repeat;
+}
+.eat {
+  background-image: url("../images/burger.png");
+  background-repeat: no-repeat;
+}
+.souvenirs {
+  background-image: url("../images/present.png");
+  background-repeat: no-repeat;
+}
+.advantages-item h3 {
+  font-weight: 700;
+  font-size: 24px ;
+  line-height: 28px ;
+  text-align: center ;
+}
+
+.advantages-item h4 {
+   font-weight: 700;
+   font-size: 24px ;
+   line-height: 28px ;
+   text-align: center ;
+ }
+
+ .advantages-item p {
+  font-size: 18px ;
+  line-height: 21px ;
+  text-align: center ;
+
+}
+
+/*Добавляет цвет фона ячейкам с причинами */
+.home {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.souvenirs {
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+.best-town, .devil-bridge {
+background-color: rgba(131, 179, 211, 1);
+
+}
+
+.square, .tourist {
+
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.beautiful-road {
+
+  background-color: rgba(131, 179, 211, 0.2);
+}
+/* Секция с кнопкой брони */
+.booking h4 {
+  font-weight: 700;
+  font-size:30px ;
+  line-height:36px;
+  text-align: center;
+  }
+
+.booking p {
+  font-size:22px ;
+  line-height:26px;
+  text-align: center;
+}
+.button-hotel {
+  font-weight: 700;
+  font-size:20px ;
+  line-height:36px;
+  text-align: center;
+  background-color: rgba(117, 98, 87, 1);
+  color: #ffffff;
+  text-decoration: none;
+}
+/*Подписка*/
+.subscription-index {
+  background-image: url("../images/background-subscription.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 410px;
+  margin: 0 auto;
+
+}
+
+.subscription h2 {
+  font-weight: 700;
+  font-size:30px ;
+  line-height:36px;
+  text-align: center;
+}
+
+.subscription p {
+  font-size:22px ;
+  line-height:26px;
+  text-align: center;
+}
+
+/*Контакты*/
+
+.phone {
+  font-size:40px ;
+  line-height:40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+/*Фильт гостиниц*/
+.icon-breadcrumbs {
+  background-image: url("../images/house-main.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+.mode-tile {
+  background-image: url("../images/mode-tile 1.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+.mode-slideshow {
+  background-image: url("../images/mode-slideshow 1.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+.mode-list {
+  background-image: url("../images/mode-list 1.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 14px;
+}
+.filter {
+background-image: url("../images/catalog-background.jpg");
+width: 1200px;
+height: 410px;
+background-repeat: no-repeat;
+color: #ffffff;
+}
+.hotel-heading {
+  font-weight: 700 ;
+  font-size: 60px;
+  line-height: 77px;
+  text-align: center;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+.hotels-filter-title {
+  font-weight: 700 ;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.choice {
+  font-size: 18px;
+  line-height: 23px;
+}
+/*Фильтр поиска*/
+.result {
+  font-weight: 700 ;
+  font-size: 30px;
+  line-height: 38px;
+}
+.sort {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.hotel-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.kind-housing, .hotel-card-price {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-card-button  {
+  color: #000000;
+  text-decoration: none;
+}
+
+.pagination-link {
+  color: #000000;
+  text-decoration: none;
+}
