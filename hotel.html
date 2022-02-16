@@ -133,7 +133,7 @@
           </form>
         </section>
       </div>
-      <div class="search-filter">
+      <div class="search">
         <section class="search-filter">
           <h2 class="visually-hidden"> Фильтр поиска</h2>
           <p class="result">Найдено гостиниц: 38</p>
@@ -144,20 +144,20 @@
             <option value="stars">Количество звезд отеля</option>
           </select>
           <div class="show">
-            <a class="button mode-tile " href="#">
+            <a class="button mode-tile show-item" href="#">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="button mode-slideshow " href="#">
+            <a class="button mode-slideshow show-item " href="#">
               <span class="visually-hidden">Показать слайдшоу</span>
             </a>
-            <a href="#" class="button">
+            <a href="#" class="button show-item">
               <span class="mode-list"></span>
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
       </div>
       <div class="hotel-card">
-        <div class="amara-resort-spa">
+        <div class="amara-resort-spa hotel-content">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Amara Resort & Spa" width="299px"
               height="220px">
@@ -172,7 +172,7 @@
             <p>Рейтинг: 8,5</p>
           </div>
         </div>
-        <div class="desert-quail-inn">
+        <div class="desert-quail-inn hotel-content">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotel-2.jpg" alt="Desert Quail Inn" width="309px" height="220px">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -187,7 +187,7 @@
             <p>Рейтинг: 8,9</p>
           </div>
         </div>
-        <div class="villas-at-poco-diabl ">
+        <div class="villas-at-poco-diabl hotel-content ">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotel-3.jpg" alt="Villas at Poco Diablo" width="308px"
               height="220px">
@@ -204,7 +204,7 @@
             <p>Рейтинг: 9,2</p>
           </div>
         </div>
-        <div class="greentree-inn">
+        <div class="greentree-inn hotel-content">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotel-4.jpg" alt="GreenTree Inn" width="299px" height="220px">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -223,11 +223,11 @@
       </section>
 
       <button class="button pagination-show-more">Загрузить ещё</button>
-      <section>
+      <section class="pagination-all">
         <h2 class="visually-hidden">Паганация</h2>
         <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">
+          <li class="pagination-item ">
+            <a class="pagination-link first-page" href="#">
               1
             </a>
           </li>
@@ -258,6 +258,7 @@
             </a>
           </li>
         </ul>
+        <div class="hotel-page">
         <p>Гостиниц на странице:</p>
         <select class="quantity">
           <option value="four">4</option>
@@ -265,6 +266,7 @@
           <option value="sixteen">16</option>
           <option value="thirty two">32</option>
         </select>
+      </div>
       </section>
 
     </main>
@@ -280,13 +282,13 @@
       <div class="footer-container">
         <section class="social-network">
           <h2 class="advantages-heading visually-hidden">Мы в соцсетях</h2>
-          <ul>
-            <li><a class="twitter" href="https://twitter.com/htmlacademy_ru"><img class="img-twitter"
+          <ul class="social-network">
+            <li class="social-network-item"><a class="twitter" href="https://twitter.com/htmlacademy_ru"><img class="img-twitter"
                   src="images/twitter.png" alt="twitter" width="18px" height="14px">
               </a></li>
-            <li><a class="facebook" href="https://www.facebook.com/htmlacademy"><img class="img-facebook"
+            <li class="social-network-item"><a class="facebook" href="https://www.facebook.com/htmlacademy"><img class="img-facebook"
                   src="images/social-facebook.png" alt="facebook" width="10px" height="18px"></a></li>
-            <li><a class="youtube" href="https://www.youtube.com/c/HTMLAcademyRUS"><img class="img-youtube"
+            <li class="social-network-item"><a class="youtube" href="https://www.youtube.com/c/HTMLAcademyRUS"><img class="img-youtube"
                   src="images/social-youtube.png" alt="youtube" width="20px" height="16px"></a></li>
           </ul>
         </section>
