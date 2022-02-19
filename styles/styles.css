@@ -136,6 +136,7 @@ flex-grow: 1;
   margin: 0;
   justify-content: space-between;
   min-height: 385px;
+
 }
 .advantages h3, .advantages h4 {
   text-transform: uppercase;
@@ -150,6 +151,7 @@ flex-grow: 1;
   margin: 0;
 
 }
+
 
 /*Вторая страница*/
 
@@ -238,8 +240,7 @@ flex-grow: 1;
   justify-content: space-between;
   margin: 0;
 }
-.hotel-content {
-  width: 340px;
+
 
 }
 .underline {
@@ -355,14 +356,17 @@ background-size: 100% auto;
 .home {
   background-image: url("../images/house.png");
   background-repeat: no-repeat;
+  width: 400px;
 }
 .eat {
   background-image: url("../images/burger.png");
   background-repeat: no-repeat;
+  width: 400px;
 }
 .souvenirs {
   background-image: url("../images/present.png");
   background-repeat: no-repeat;
+  width: 400px;
 }
 .advantages-item h3 {
   font-weight: 700;
@@ -613,5 +617,18 @@ color: #ffffff;
 
   }
 
+.hotel-card {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 18px 10px;
+  margin: 53px 72px 30px;
+}
+
+.hotel-content {
+  padding: 20px;
+}
 
 
+.advantages {
+  display: grid;
+}
