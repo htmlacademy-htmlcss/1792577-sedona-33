@@ -302,15 +302,24 @@ flex-grow: 1;
 background-image: url("../images/index-background (1).jpg") ;
 background-repeat: no-repeat;
 background-size: 100% auto;
+width: 1200px;
+height: 500px;
 
 }
+/*
 
+main::before {
 
-.divider {
+ content: "";
+ position: absolute;
   background-image: url("../images/divider.png");
   background-repeat: no-repeat;
 
+
+
 }
+*/
+
 /*Добавляет иконки в шапку*/
 .navigation-img-search {
   background-image: url("../images/search.png");
@@ -628,7 +637,3 @@ color: #ffffff;
   padding: 20px;
 }
 
-
-.advantages {
-  display: grid;
-}
