@@ -210,7 +210,7 @@
       </div>
     </footer>
   </div>
-  <!--
+
   <div class="modal-container">
     <div class="modal modal-booking">
       <button class="modal-close-button">
@@ -227,16 +227,16 @@
             <input class="date-booking-arrive input-decoration" type="date" name="data-arrive" placeholder="27 апреля 2020">
           </label>
         </p>
-          <p class="data-worred">Мы не можем отправить вас в прошлое.</p>
+          <p class="data-inaformaition data-worred">Мы не можем отправить вас в прошлое.</p>
         </div>
         <div class="leave">
           <p class="form-decoration">
           <label class="data-form-leave form-label">
             <span class="styles-datas">Дата выезда:</span>
-            <input class="date-booking-leave input-decoration" type="date" name="data-leave" placeholder="1 сентября 2021">
+            <input class="date-booking-leave input-decoration" type="date" name="data-leave" text="1 сентября 2021">
           </label>
           </p>
-          <p class="data-free">На эти даты есть свободные номера. Пока есть.</p>
+          <p class="data-inaformaition data-free">На эти даты есть свободные номера. Пока есть.</p>
         </div>
         <div class="form-decoration">
     <div class="person-adult">
@@ -244,24 +244,30 @@
       <label class="person-adult-form form-label">
         <span class="aduit">Взрослые:</span>
          <div class="number">
-          <span class="minus">-</span>
-          <input class="number-adult" type="text" value="1" size="5"/>
-          <span class="plus">+</span>
+          <span class="minus visually-hidden">-</span>
+          <input class="number-adult" type="text" value="2" size="20"/>
+          <span class="plus visually-hidden">+</span>
          </div>
       </label>
-
     </div>
     <div class="person-child">
-
+<span class="form-label">
       <label class="person-child-form form-label">
-        Дети:
-        <span class="info"></span>
+        <span class="children">
+        Дети:</span>
+        <span class="tooltip">
+          <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"
+          role="tooltip" id="tooltip-label"></button>
+          <span class="tooltp-text"  role="tooltip" id="tooltip-label"> Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+
+        </span>
         <div class="number">
-          <span class="minus">-</span>
-          <input class="number-child" type="text" value="1" size="5"/>
-          <span class="plus">+</span>
+          <span class="minus visually-hidden">-</span>
+          <input class="number-child" type="text" value="1" size="20"/>
+          <span class="plus visually-hidden">+</span>
       </div>
       </label>
+    </span>
       </div>
         </div>
 
@@ -271,7 +277,7 @@
   </div>
 
   </div>
-  -->
+
 </body>
 
 </html>
