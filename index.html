@@ -210,7 +210,6 @@
       </div>
     </footer>
   </div>
-
   <div class="modal-container">
     <div class="modal modal-booking">
       <button class="modal-close-button">
@@ -224,7 +223,8 @@
           <p class="form-decoration">
           <label class="data-form-arrive form-label">
             <span class="styles-datas">Дата заезда:</span>
-            <input class="date-booking-arrive input-decoration" type="date" name="data-arrive" placeholder="27 апреля 2020">
+            <input class="date-booking-arrive input-decoration" type="text" name="data-arrive" value="27 апреля 2020">
+          <button class="calendar-arrive"></button>
           </label>
         </p>
           <p class="data-inaformaition data-worred">Мы не можем отправить вас в прошлое.</p>
@@ -233,7 +233,8 @@
           <p class="form-decoration">
           <label class="data-form-leave form-label">
             <span class="styles-datas">Дата выезда:</span>
-            <input class="date-booking-leave input-decoration" type="date" name="data-leave" text="1 сентября 2021">
+            <input class="date-booking-leave input-decoration" type="text" name="data-leave" value="1 сентября 2021">
+            <button class="calendar-leave"></button>
           </label>
           </p>
           <p class="data-inaformaition data-free">На эти даты есть свободные номера. Пока есть.</p>
@@ -244,9 +245,15 @@
       <label class="person-adult-form form-label">
         <span class="aduit">Взрослые:</span>
          <div class="number">
-          <span class="minus visually-hidden">-</span>
+          <button class="minus"><svg width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
+            <path  d="M0 0L0 1L13 1V0L0 0Z" />
+            </svg>
+            </button>
           <input class="number-adult" type="text" value="2" size="20"/>
-          <span class="plus visually-hidden">+</span>
+          <button class="plus"><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+            </svg>
+            </button>
          </div>
       </label>
     </div>
@@ -258,13 +265,18 @@
         <span class="tooltip">
           <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"
           role="tooltip" id="tooltip-label"></button>
-          <span class="tooltp-text"  role="tooltip" id="tooltip-label"> Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-
+          <span class="tooltip-text"  role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
         </span>
         <div class="number">
-          <span class="minus visually-hidden">-</span>
+          <button class="minus"><svg width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0L0 1L13 1V0L0 0Z" />
+            </svg>
+            </button>
           <input class="number-child" type="text" value="1" size="20"/>
-          <span class="plus visually-hidden">+</span>
+          <button class="plus "><svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+            </svg>
+            </button>
       </div>
       </label>
     </span>
@@ -275,7 +287,6 @@
       <button class="modal-button blue-button">Найти</button>
     </section>
   </div>
-
   </div>
 
 </body>

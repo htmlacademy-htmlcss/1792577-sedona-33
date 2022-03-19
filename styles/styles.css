@@ -238,12 +238,12 @@ color: rgba(117, 98, 87, 0.3);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center bottom 0;
+  min-height: 485px;
+  background-color: grey;
   }
 .greeting-where {
-  display: block;
   width: 460px;
-  padding: 51px 371px 82px;
-  margin: 0 auto;
+  margin: 51px 371px;
 }
 .discription {
   text-align: center;
@@ -445,6 +445,7 @@ background-color: #615048;
 }
 .filter {
   background-image: url("../images/catalog-background.jpg");
+  background-color: gray;
   width: 1200px;
   height: 410px;
   background-repeat: no-repeat;
@@ -557,10 +558,15 @@ color: #87ABCA;
 .control:hover  .square-choice {
   background-color: #c4d1e1;
 }
-.control:focus  .square-choice {
+.infrastructure-input[type="checkbox"]:focus + .square-choice {
   background-color: #becddc;
   outline: 3px solid #83B3D3;
 border-radius: 4px;
+}
+.infrastructure-input[type="radio"]:focus + .circle-choice{
+  background-color: #becddc;
+  outline: 3px solid #83B3D3;
+border-radius: 50%;
 }
 .control:active  .square-choice {
   background-color: #8297a9;
@@ -1414,10 +1420,10 @@ color: #D6D0CD;
 
 }
 .htmlacademy {
-  width: 140px;
+  width: 160px;
+  height: 70px;
   margin-left: 55px;
-  padding: 15px;
-
+  padding: 18px;
 }
 .htmlacademy:hover {
   fill: #756257;
@@ -1427,7 +1433,7 @@ color: #D6D0CD;
   fill: #756257;
   border-radius: 10px;
   outline:3px solid #83B3D3;
-  padding: 10px;
+
 }
 .htmlacademy:active {
   fill: #D6D0CD;
@@ -1557,6 +1563,40 @@ text-align: center;
   border: none;
   border-radius: 4px;
 }
+  .calendar-arrive {
+  background-image: url("../images/date.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: none;
+  right: 90px;
+  top: 152px;
+}
+.calendar-leave {
+ background-image: url("../images/date.svg");
+ background-repeat: no-repeat;
+ position: absolute;
+ width: 15px;
+ height: 15px;
+ border: none;
+ right: 90px;
+top: 256px;
+}
+.input-decoration:hover  {
+  background-color: #E6E6E6;
+}
+.input-decoration:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.input-decoration:active {
+  border: 2px solid #000000;
+border-radius: 4px;
+background-color: white;
+}
+
 .form-decoration {
   display: flex;
   justify-content: space-between;
@@ -1582,9 +1622,7 @@ text-align: center;
  background-color: #F2F2F2;
  border: none;
  border-radius: 4px;
- background-image: url("../images/minus.svg"), url("../images/plus.svg");
- background-repeat: no-repeat;
- background-position: 19px center, center right 19px;
+
 }
 
 .number-adult {
@@ -1609,13 +1647,52 @@ text-align: center;
 }
 .plus {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 15px;
+  right: 18px;
+  fill: #a9a9a9;
+  border: none;
+  padding-top: 4px;
 }
-.minus {
+.plus:hover {
+  fill: black;
+}
+.plus:focus {
+  fill: black;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;;
+}
+.plus:active {
+  fill:#cccccc;
+}
+.minus{
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 12px;
+  right: 114px;
+  fill: #a9a9a9;
+  border: none;
+  top: 14px;
+  right: 98px;
+  padding: 1px 6px 9px 6px;
+}
+.minus:hover {
+  fill: black;
+}
+.minus:focus {
+  fill: black;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;;
+}
+.minus:active {
+  fill:#cccccc;
+}
+
+.plus:hover {
+  fill: black;
+}
+.plus:focus {
+  fill: black;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;;
 }
 .children {
   font-weight: 700;
@@ -1654,9 +1731,17 @@ background-image: url("../images/icon-i.svg");
 background-repeat: no-repeat;
 background-position: center;
 }
-.tooltp-text {
-  background-image: url("../images/tooltip.png");
-  background-repeat: no-repeat;
+.tooltip-toggle:hover,
+.tooltip-toggle:focus {
+background-color: #68A2CA;
+}
+
+.tooltip-text {
+  background-color: #333333;
+    padding: 15px 18px 18px 22px;
+    border-radius: 10px;
+    margin-top: 23px;
+    margin-right: -10px;
   width: 256px;
   height: 143px;
   color: white;
@@ -1665,5 +1750,20 @@ background-position: center;
   line-height: 20px;
   display: block;
   position: absolute;
+  right: 110px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.5);
+  display: none;
+}
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  border: 16px solid transparent;
+  border-bottom: 13px solid #333333;
+  margin-top: -44px;
+  left: 111px;
+}
+.tooltip-toggle:hover  + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
