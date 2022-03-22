@@ -56,7 +56,7 @@
               <span class="navigation-img-favorite-counter">12</span>
             </a>
           </li>
-          <li class="navigation-item-user button">
+          <li class="navigation-item-user navigation-item-user-button button">
             <a class="navigation-link-user button-want button-brown" href="#">
               Хочу сюда!
             </a>
@@ -149,12 +149,12 @@
             <fieldset class=" hotels-filter-group hotels-price">
               <legend class="hotels-filter-title">Стоимость, ₽:</legend>
               <div class="price-border">
-                <label class="label-range"><span class="position-label">от</span><input class=" range-input min" type="number" value="0" name="min-price" ></label>
-                <label class="label-range"><span class="position-label">до</span><input class="range-input max" type="number" value="9000" name="max-price" ></label>
+                <label class="label-range"><span class="position-from">от</span><input class=" range-input min" type="number" value="0" name="min-price" ></label>
+                <label class="label-range"><span class="position-before">до</span><input class="range-input max" type="number" value="9000" name="max-price" ></label>
             </div>
               <div class="range">
                 <div class="range-scale">
-                <div class="range-bar" style="left: 0px; width: 227px;">
+                <div class="range-bar" style="left: 0px; width: 238px;">
                   <button class="range-toggle toggle-min" type="button"></button>
                   <button class="range-toggle toggle-max" type="button"></button>
                 </div>
@@ -170,14 +170,15 @@
           </form>
         </section>
       </div>
-      <div class="search">
+
         <section class="search-filter">
           <h2 class="visually-hidden"> Фильтр поиска</h2>
           <p class="result">Найдено гостиниц: 38</p>
+          <div class="search">
           <select class="sort">
-            <option value="expensive">Сначала дешёвое</option>
-            <option value="cheap">Сначала дорогое</option>
-            <option value="popular">Сначала популярное</option>
+            <option value="expensive">Сначала дешёвые</option>
+            <option value="cheap">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
             <option value="stars">Количество звезд отеля</option>
           </select>
           <div class="show">
@@ -191,13 +192,14 @@
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
+        </div>
         </section>
-      </div>
+
       <div class="hotel-card">
         <div class="amara-resort-spa hotel-content">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="images/hotel-AmaraResort.jpg" alt="Amara Resort & Spa" width="299px"
-              height="220px">
+            <img class="hotel-card-image" src="images/hotel-AmaraResort.jpg" alt="Amara Resort & Spa" width="300px"
+              height="206px">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <div class="type-and-price">
@@ -206,7 +208,7 @@
           </div>
           <div class="button-cards">
             <a class="hotel-card-button hotel-button" href="#">Подробнее</a>
-            <button class="hotel-card-favourites-button hotel-button blue-button">В избранное</button>
+            <button class="hotel-card-favourites-button hotel-button blue-button" type="button">В избранное</button>
           </div>
           <div class="rating">
             <p class="four-stars"><span class="visually-hidden"> 4-x звездочная гостиница</span></p>
@@ -216,7 +218,8 @@
         <div class="desert-quail-inn hotel-content">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotel-DesertQuail.jpg" alt="Desert Quail Inn" width="309px"
-              height="220px">
+              height="206px">
+
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <div class="type-and-price">
@@ -225,7 +228,7 @@
           </div>
           <div class="button-cards">
             <a class="hotel-card-button hotel-button " href="#">Подробнее</a>
-            <button class="hotel-card-favourites-button hotel-button blue-button">В избранное</button>
+            <button class="hotel-card-favourites-button hotel-button blue-button" type="button">В избранное</button>
           </div>
           <div class="rating">
             <p class="three-stars"><span class="visually-hidden">3-x звездочная гостиница </span></p>
@@ -235,16 +238,16 @@
         <div class="villas-at-poco-diabl hotel-content ">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images/hotel-VillasatPocoDiablo.jpg" alt="Villas at Poco Diablo"
-              width="308px" height="220px">
+              width="300px" height="206px">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <div class="type-and-price">
             <p class="kind-housing">Гостиница</p>
-            <p class="hotel-card-price">От 4000 ₽</p>
+            <p class="hotel-card-price">От 2000 ₽</p>
           </div>
           <div class="button-cards">
             <a class="hotel-card-button hotel-button " href="#">Подробнее</a>
-            <button class="hotel-card-favourites-button hotel-card-favourites-button-done hotel-button green-button">
+            <button class="hotel-card-favourites-button hotel-card-favourites-button-done hotel-button green-button" type="button">
               В избранном
             </button>
           </div>
@@ -255,8 +258,8 @@
         </div>
         <div class="greentree-inn hotel-content">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="images/hotel-GreenTree.jpg" alt="GreenTree Inn" width="299px"
-              height="220px">
+            <img class="hotel-card-image" src="images/hotel-GreenTree.jpg" alt="GreenTree Inn" width="300px"
+              height="206px">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <div class="type-and-price">
@@ -265,7 +268,7 @@
           </div>
           <div class="button-cards">
             <a class="hotel-card-button hotel-button " href="#">Подробнее</a>
-            <button class="hotel-card-favourites-button hotel-button blue-button">В
+            <button class="hotel-card-favourites-button hotel-button blue-button" type="button">В
               избранное</button>
           </div>
           <div class="rating">
@@ -276,7 +279,7 @@
       </div>
 
 
-      <button class="button pagination-show-more blue-button">Загрузить ещё</button>
+      <button class="button pagination-show-more blue-button" type="button">Загрузить ещё</button>
       <section class="pagination-all">
         <h2 class="visually-hidden">Паганация</h2>
         <ul class="pagination">
@@ -328,7 +331,7 @@
       <section class="subscription-hotel">
 
         <h2 class="subscription-heading-hotel">Подпишитесь на рассылку</h2>
-        <p class="subscription-hotel">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <p class="subscription-hotel-paragraph">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" class="form-subscrirtion">
           <label class="visually-hidden" for="e-mail">Введите e-mail</label>
           <input class="subscription-email subscription-email-worred " type="text" name="Ваш e-mail"
@@ -336,7 +339,7 @@
           <button class="button submit blue-button" type="submit" id="e-mail">Подписаться</button>
         </form>
       </section>
-      <div class="footer-container-hotel">
+      <div class="footer-container">
         <section class="social-network">
           <h2 class="advantages-heading visually-hidden">Мы в соцсетях</h2>
           <ul class="social-network">
