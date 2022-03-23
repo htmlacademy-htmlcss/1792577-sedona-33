@@ -303,7 +303,7 @@ body {
   background-image: url("../images/present.png");
   background-repeat: no-repeat;
   min-width: 400px;
-  background-position: 169px 93px;
+  background-position: 169px 87px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -1487,6 +1487,7 @@ top:-8px;
 
 .subscription-index {
   background-image: url("../images/background-subscription.jpg");
+  background-color: gray;
   background-repeat: no-repeat;
   width: 1200px;
   height: 410px;
@@ -1951,9 +1952,10 @@ top:-8px;
   width: 15px;
   height: 15px;
   border: none;
-  right: 90px;
-  top: 181px;
+  right: 92px;
+  top: 179px;
   background-color: transparent;
+  outline: none;
 }
 
 .calendar-leave {
@@ -1963,9 +1965,10 @@ top:-8px;
   width: 15px;
   height: 15px;
   border: none;
-  right: 90px;
-  top: 271px;
+  right: 92px;
+  top: 269px;
   background-color: transparent;
+  outline: none;
 }
 
 .input-decoration:hover  {
