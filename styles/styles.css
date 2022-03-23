@@ -867,7 +867,7 @@ top:-8px;
 }
 
 .range-input {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1003,7 +1003,7 @@ top:-8px;
   overflow: hidden;
   background: url('../images/dropdown.svg') no-repeat right;
   background-position: 254px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1202,7 +1202,7 @@ top:-8px;
 }
 
 .hotel-card-button {
-   font-family: "PT Sans";
+   font-family: "PT Sans", sans-serif;
    font-weight: 700;
    font-size: 16px;
    background-color: #756257;
@@ -1238,7 +1238,7 @@ top:-8px;
 }
 
 .hotel-card-favourites-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   background-color: #83B3D3;
@@ -1466,7 +1466,7 @@ top:-8px;
   border-radius: 4px;
   border: 2px solid #E6E6E6;
   padding-left: 17px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1878,7 +1878,7 @@ top:-8px;
   min-width: 499px;
   min-height: 66px;
   text-transform: uppercase;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1899,7 +1899,7 @@ top:-8px;
   border: none;
   border-radius: 10px;
   color: white;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -1916,7 +1916,7 @@ top:-8px;
 .styles-datas {
   display: flex;
   width: 150px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
