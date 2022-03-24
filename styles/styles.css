@@ -1956,6 +1956,7 @@ top:-8px;
   top: 179px;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 .calendar-leave {
@@ -1969,6 +1970,7 @@ top:-8px;
   top: 269px;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 .input-decoration:hover  {
@@ -1985,6 +1987,7 @@ top:-8px;
   border: 2px solid #000000;
   border-radius: 4px;
   background-color: white;
+  padding-left: 21px;
 }
 
 .form-decoration {
